@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="BoraGuardar — Veja seus gastos. Entenda seu dinheiro.">
+
+    <meta name="author"
+          content="João Werner">
+
+    <title>BoraGuardar</title>
+
+    <!-- CSS separado -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--CONTAINER PRINCIPAL-->
+
+    <div class="space">
+
+
+        <!--ELEMENTOS DO FUNDO-->
+
+        <div class="glow"></div>
+
+        <div class="grid"></div>
+
+        <div class="orbit one"></div>
+
+        <div class="orbit two"></div>
+
+        <div class="orbit three"></div>
+
+
+        <!-- PARTÍCULAS -->
+
+        <div class="particle p1"></div>
+
+        <div class="particle p2"></div>
+
+        <div class="particle p3"></div>
+
+        <div class="particle p4"></div>
+
+        <div class="particle p5"></div>
+
+
+        <!--CABEÇALHO-->
+
+        <header>
+
+            <!--
+                ÁREA DO LOGO
+
+                Quando tiver o logo, coloque:
+
+                <img src="logo.png" class="logo">
+            -->
+
+            <div class="logo-area">
+
+            </div>
+
+
+            <!-- STATUS -->
+
+            <div class="system-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    SISTEMA ONLINE
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+
+        <main>
+
+
+            <!--CONTEÚDO ESQUERDO -->
+
+            <section class="content">
+
+
+                <!-- PROTOCOLO -->
+
+                <div class="protocol">
+
+                    PERSONAL FINANCE SYSTEM
+
+                </div>
+
+
+                <!-- TÍTULO -->
+
+                <h1>
+
+                    <span id="typing"></span>
+
+                    <span class="cursor"></span>
+
+                </h1>
+
+
+                <!-- DESCRIÇÃO -->
+
+                <p class="description">
+
+                    Veja seus gastos.
+                    Entenda seu dinheiro.
+
+                    Organize suas despesas de forma
+                    simples, rápida e inteligente.
+
+                </p>
+
+
+                <!-- BOTÃO -->
+
+                <a
+                    href="dashboard.html"
+                    class="enter"
+                >
+
+                    Acessar BoraGuardar
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+            </section>
+
+
+
+            <!--ÁREA VISUAL-->
+
+            <section class="visual">
+
+
+                <!-- DASHBOARD-->
+
+                <div class="dashboard">
+
+
+                    <!-- TOPO -->
+
+                    <div class="dashboard-top">
+
+                        <span>
+                            BORAGUARD
+                        </span>
+
+
+                        <div class="terminal-dots">
+
+                            <span></span>
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!--SALDO -->
+
+                    <div
+                        class="balance positive"
+                        id="balanceBox"
+                    >
+
+                        <span class="balance-label">
+
+                            SALDO ATUAL
+
+                        </span>
+
+
+                        <strong id="saldo">
+
+                            R$ 1.248,90
+
+                        </strong>
+
+
+                        <span class="balance-status">
+
+                            <span id="statusIcon">
+
+                                ▲
+
+                            </span>
+
+
+                            <span id="statusText">
+
+                                SALDO POSITIVO
+
+                            </span>
+
+                        </span>
+
+                    </div>
+
+
+                    <!--GRÁFICO-->
+
+                    <div class="chart-container">
+
+
+                        <!-- GRADE -->
+
+                        <div class="chart-grid"></div>
+
+
+                        <!-- GRÁFICO SVG -->
+
+                        <svg
+                            class="chart-svg"
+                            viewBox="0 0 500 180"
+                            preserveAspectRatio="none"
+                        >
+
+
+                            <!-- LINHA VERDE -->
+
+                            <polyline
+                                id="greenLine"
+                                class="green-line"
+                                points="
+                                0,145
+                                70,125
+                                140,135
+                                210,95
+                                280,110
+                                350,65
+                                420,80
+                                500,35
+                                "
+                            />
+
+
+                            <!-- LINHA VERMELHA -->
+
+                            <polyline
+                                id="redLine"
+                                class="red-line"
+                                points="
+                                0,35
+                                70,55
+                                140,45
+                                210,85
+                                280,70
+                                350,115
+                                420,100
+                                500,145
+                                "
+                            />
+
+                        </svg>
+
+
+                        <!-- STATUS DO GRÁFICO -->
+
+                        <span
+                            class="chart-label"
+                            id="marketStatus"
+                        >
+
+                            SUBINDO
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- DESPESAS-->
+
+                    <div class="expenses">
+
+
+                        <!-- ALIMENTAÇÃO -->
+
+                        <div class="expense">
+
+                            <div class="expense-left">
+
+                                <div class="expense-icon">
+
+                                    🍔
+
+                                </div>
+
+
+                                <span class="expense-name">
+
+                                    Alimentação
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="expense-value">
+
+                                R$ 320,00
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- TRANSPORTE -->
+
+                        <div class="expense">
+
+                            <div class="expense-left">
+
+                                <div class="expense-icon">
+
+                                    🚗
+
+                                </div>
+
+
+                                <span class="expense-name">
+
+                                    Transporte
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="expense-value">
+
+                                R$ 180,00
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- LAZER -->
+
+                        <div class="expense">
+
+                            <div class="expense-left">
+
+                                <div class="expense-icon">
+
+                                    🎮
+
+                                </div>
+
+
+                                <span class="expense-name">
+
+                                    Lazer
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="expense-value">
+
+                                R$ 150,00
+
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!--HUD-->
+
+                    <div class="hud">
+
+                        <span>
+                            LIVE DATA
+                        </span>
+
+
+                        <span>
+                            ●
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!--RODAPÉ -->
+
+        <footer>
+
+            <span>
+                BORAGUARD
+            </span>
+
+
+            <span>
+                PERSONAL FINANCE • 2026
+            </span>
+
+        </footer>
+
+
+    </div>
+
+
+    <!--JAVASCRIPT SEPARADO->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
